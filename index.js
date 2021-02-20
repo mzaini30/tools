@@ -54,6 +54,12 @@ function tanggal(){
 function sleep(n){
  return new Promise(resolve => setTimeout(resolve, n))
 }
+const toBase64 = file => new Promise((resolve, reject) => {
+  const reader = new FileReader();
+  reader.readAsDataURL(file);
+  reader.onload = () => resolve(reader.result);
+  reader.onerror = error => reject(error);
+});
 
 module.exports = {
   acak,
@@ -61,5 +67,6 @@ module.exports = {
   clean,
   slug,
   tanggal,
-  sleep
+  sleep,
+  toBase64
 }

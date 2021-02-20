@@ -8,43 +8,74 @@ Kumpulan tools siap pakai.
 npm i mzaini30/tools --prefer-offline
 ```
 
-## Contoh
+## Tools-Toolsnya
+
+### Tanggal
+
+Mendapatkan tanggal terkini dengan format 2020-08-17 00:19:45
+
+Caranya:
+
+```html
+<script>
+	import {tanggal} from 'tools'
+</script>
+<p>{tanggal()}</p>
+```
+
+### Slug
+
+Mendapatkan slug dari string
+
+Caranya:
+
+```html
+<script>
+	import {slug} from 'tools'
+</script>
+<p>{slug('hello world')}</p>
+<!-- jadinya: hello-world -->
+```
+
+### Acak
+
+Digunakan untuk mengacak array
+
+Caranya:
 
 ```javascript
-const tools = require('tools')
-console.log()
-
-// acak
-const angka = [...Array(10).keys()]
-const acak = tools.acak(angka)
-console.log('Angka diacak:')
-console.log(acak)
-console.log()
-
-// slug
-const judul = 'Aku mau makan nasi. Kamu mau ikut kah?'
-console.log(`Judul: ${judul}`)
-console.log(`Slug: ${tools.slug(judul)}`)
-console.log()
-
-// tanggal
-console.log(`Tanggal sekarang: ${tools.tanggal()}`)
-
-console.log()
+import {acak} from "tools"
+let angka = [1, 2, 3, 4, 5]
+angka = acak(angka)
 ```
 
-Hasil:
+### Atas
 
+Scroll ke atas.
+
+```javascript
+import {atas} from 'tools'
+atas()
 ```
-Angka diacak:
-[
-  2, 7, 6, 3,
-  1, 8, 9, 4,
-  0, 5
-]
 
-Judul: Aku mau makan nasi. Kamu mau ikut kah?
-Slug: aku-mau-makan-nasi-kamu-mau-ikut-kah
+### Clean
 
-Tanggal sekarang: 2021-01-30 14:59:57
+Membersihkan state dari kutip sehingga tidak merusak database dengan SQL Injection.
+
+```javascript
+import {clean} from 'tools'
+clean('Aku mau "makan')
+```
+
+### Sleep
+
+Memberi jeda dalam milidetik.
+
+```javascript
+import {sleep} from 'tools'
+(async function(){
+	console.log('Hello')
+	await sleep(5000) // sleep 5 detik
+	console.log('World')
+})()
 ```
