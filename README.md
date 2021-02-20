@@ -79,3 +79,15 @@ import {sleep} from 'tools'
 	console.log('World')
 })()
 ```
+
+### toBase64
+
+```javascript
+import {toBase64} from 'tools'
+$: if (files) {
+	(async function () {
+		const hasil = await toBase64(files[0])
+		console.log(hasil)
+	})()
+}
+```
