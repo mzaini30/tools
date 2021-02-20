@@ -24,7 +24,11 @@ function atas(){
   })
 }
 function clean(x){
-  return x.replace(/'/g, "\\'").replace(/"/g, '\\"')
+  if (x) {
+    return x.replace(/'/g, "\\'").replace(/"/g, '\\"')
+  } else {
+    return ''
+  }
 }
 function slug (str) {
     str = str.replace(/^\s+|\s+$/g, ''); // trim
