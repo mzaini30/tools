@@ -5,7 +5,7 @@ Kumpulan tools siap pakai.
 ## Instalasi
 
 ```bash
-npm i mzaini30/tools --prefer-offline
+npm i @mzaini30/tools --prefer-offline
 ```
 
 ## Tools-Toolsnya
@@ -18,7 +18,7 @@ Caranya:
 
 ```html
 <script>
-	import {tanggal} from 'tools'
+	import {tanggal} from '@mzaini30/tools'
 </script>
 <p>{tanggal()}</p>
 ```
@@ -31,7 +31,7 @@ Caranya:
 
 ```html
 <script>
-	import {slug} from 'tools'
+	import {slug} from '@mzaini30/tools'
 </script>
 <p>{slug('hello world')}</p>
 <!-- jadinya: hello-world -->
@@ -54,7 +54,7 @@ angka = acak(angka)
 Scroll ke atas.
 
 ```javascript
-import {atas} from 'tools'
+import {atas} from '@mzaini30/tools'
 atas()
 ```
 
@@ -63,7 +63,7 @@ atas()
 Membersihkan state dari kutip sehingga tidak merusak database dengan SQL Injection.
 
 ```javascript
-import {clean} from 'tools'
+import {clean} from '@mzaini30/tools'
 clean('Aku mau "makan')
 ```
 
@@ -72,7 +72,7 @@ clean('Aku mau "makan')
 Memberi jeda dalam milidetik.
 
 ```javascript
-import {sleep} from 'tools'
+import {sleep} from '@mzaini30/tools'
 (async function(){
 	console.log('Hello')
 	await sleep(5000) // sleep 5 detik
@@ -83,7 +83,7 @@ import {sleep} from 'tools'
 ### toBase64
 
 ```javascript
-import {toBase64} from 'tools'
+import {toBase64} from '@mzaini30/tools'
 $: if (files) {
 	(async function () {
 		const hasil = await toBase64(files[0])
