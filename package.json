@@ -1,6 +1,6 @@
 {
   "name": "@mzaini30/tools",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Kumpulan tools siap pakai.",
   "main": "index.js",
   "scripts": {

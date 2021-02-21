@@ -44,7 +44,7 @@ Digunakan untuk mengacak array
 Caranya:
 
 ```javascript
-import {acak} from "tools"
+import {acak} from "@mzaini30/tools"
 let angka = [1, 2, 3, 4, 5]
 angka = acak(angka)
 ```
