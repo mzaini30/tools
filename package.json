@@ -1,12 +1,20 @@
 {
   "name": "@mzaini30/tools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Kumpulan tools siap pakai.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+github.com/mzaini30/tools.git"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mzaini30/tools/issues"
+  },
+  "homepage": "https://github.com/mzaini30/tools#readme"
 }
