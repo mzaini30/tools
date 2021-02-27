@@ -5,7 +5,7 @@ Kumpulan tools siap pakai.
 ## Instalasi
 
 ```bash
-npm i @mzaini30/tools --prefer-offline
+npm i kumpulan-tools
 ```
 
 ## Tools-Toolsnya
@@ -18,7 +18,7 @@ Caranya:
 
 ```html
 <script>
-	import {tanggal} from '@mzaini30/tools'
+	import {tanggal} from 'kumpulan-tools'
 </script>
 <p>{tanggal()}</p>
 ```
@@ -31,7 +31,7 @@ Caranya:
 
 ```html
 <script>
-	import {slug} from '@mzaini30/tools'
+	import {slug} from 'kumpulan-tools'
 </script>
 <p>{slug('hello world')}</p>
 <!-- jadinya: hello-world -->
@@ -44,7 +44,7 @@ Digunakan untuk mengacak array
 Caranya:
 
 ```javascript
-import {acak} from "@mzaini30/tools"
+import {acak} from "kumpulan-tools"
 let angka = [1, 2, 3, 4, 5]
 angka = acak(angka)
 ```
@@ -54,7 +54,7 @@ angka = acak(angka)
 Scroll ke atas.
 
 ```javascript
-import {atas} from '@mzaini30/tools'
+import {atas} from 'kumpulan-tools'
 atas()
 ```
 
@@ -63,7 +63,7 @@ atas()
 Membersihkan state dari kutip sehingga tidak merusak database dengan SQL Injection.
 
 ```javascript
-import {clean} from '@mzaini30/tools'
+import {clean} from 'kumpulan-tools'
 clean('Aku mau "makan')
 ```
 
@@ -72,7 +72,7 @@ clean('Aku mau "makan')
 Memberi jeda dalam milidetik.
 
 ```javascript
-import {sleep} from '@mzaini30/tools'
+import {sleep} from 'kumpulan-tools'
 (async function(){
 	console.log('Hello')
 	await sleep(5000) // sleep 5 detik
@@ -83,7 +83,7 @@ import {sleep} from '@mzaini30/tools'
 ### toBase64
 
 ```javascript
-import {toBase64} from '@mzaini30/tools'
+import {toBase64} from 'kumpulan-tools'
 $: if (files) {
 	(async function () {
 		const hasil = await toBase64(files[0])
