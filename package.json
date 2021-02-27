@@ -1,6 +1,6 @@
 {
   "name": "kumpulan-tools",
-  "version": "2.0.1",
+  "version": "1.0.0",
   "description": "Kumpulan tools siap pakai.",
   "main": "index.js",
   "scripts": {
